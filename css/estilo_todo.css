@@ -1,0 +1,53 @@
+.boton-enlace {
+    text-decoration: none;
+    color: white; 
+    background-color: black; 
+    padding: 10px 20px;
+    margin: 5px; 
+    border-radius: 5px; 
+  }
+
+  .seguido{
+    display: inline-block; 
+    text-align: center;
+  }
+
+  .justificar{
+    text-align: justify; 
+    margin:10px;
+  }
+
+  body {
+    background: url('img/fondo.jpg') no-repeat center center fixed; /* Puedes reemplazar 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .imagen-con-texto {
+    position: relative;
+    width: 300px; /* ajusta el tamaño según sea necesario */
+    margin: 0 auto; /* centra el contenedor */
+  }
+
+  .imagen-con-texto img {
+    width: 100%;
+    display: block;
+  }
+
+  .imagen-con-texto p {
+    position: absolute;
+    top: 50%; /* coloca el texto en el centro verticalmente */
+    left: 50%; /* coloca el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* ajusta para centrar correctamente */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+  .miDiv {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(180deg, transparent 20%, black 100%);
+  }

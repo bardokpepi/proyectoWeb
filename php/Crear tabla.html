@@ -1,0 +1,24 @@
+<?php
+include("php/conexion.php");
+
+// Conectar a la base de datos
+$link = conectar();
+
+// Comando SQL para crear la tabla
+$sql = "CREATE TABLE IF NOT EXISTS usuario (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    CORREO VARCHAR(255) NOT NULL,
+    USER VARCHAR(255) NOT NULL UNIQUE,
+    PASS VARCHAR(255) NOT NULL
+)";
+
+// Ejecutar el comando SQL
+if ($link->query($sql) === TRUE) {
+    echo "Tabla 'usuario' creada correctamente.";
+} else {
+    echo "Error al crear la tabla: " . $link->error;
+}
+
+// Cerrar la conexión
+$link->close();
+?>
